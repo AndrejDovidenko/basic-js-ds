@@ -82,27 +82,6 @@ class BinarySearchTree {
   }
 
   remove(data) {
-    // const empty = (node, value) => {
-    //   if (node.data === value) {
-    //     node = null;
-    //     return;
-    //   }
-
-    //   if (node.data < value) {
-    //     if (node.right !== null) {
-    //       node.right = empty(node.right, value);
-    //       return node;
-    //     }
-    //   }
-
-    //   if (node.data > value) {
-    //     if (node.left !== null) {
-    //       return empty(node.left, value);
-    //     }
-    //   }
-    // };
-
-    // return empty(this.rootTree, data);
     const removeNode = (node, value) => {
       if (!node) {
         return null;
@@ -168,9 +147,6 @@ class BinarySearchTree {
     return node.data;
   }
 }
-
-// let x = new BinarySearchTree();
-// x.root();
 
 module.exports = {
   BinarySearchTree,
